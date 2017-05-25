@@ -4,7 +4,7 @@
 		
 	</div>
 	<button id="btnAdd" class="btn btn-success">Add New</button>
-	<table class="table table-bordered table-responsive" style="margin-top: 20px;">
+	<table class="table table-bordered table-responsive" style="margin-top: 20px;" id="book-table">
 		<thead>
 			<tr>
 				<td>ID</td>
@@ -72,6 +72,11 @@
 
 <script>
 	$(function(){
+		
+	$(document).ready(function() {
+    $('#book-table').DataTable();
+	});
+		
 		showAllEmployee();
 
 		//Add New
