@@ -81,6 +81,7 @@
 
 		//Add New
 		$('#btnAdd').click(function(){
+			$('#myForm')[0].reset();
 			$('#myModal').modal('show');
 			$('#myModal').find('.modal-title').text('Add New Employee');
 			$('#myForm').attr('action', '<?php echo base_url() ?>employee/addEmployee');
